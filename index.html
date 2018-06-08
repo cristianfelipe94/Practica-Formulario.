@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica Forms</title>
+        <meta name= "author" content="Cristian Felipe"/>
+    </head>
+    <body>
+        <h1>Información sobre el producto.</h1>
+        <form action="POST">
+
+            <fieldset>
+                <legend>Datos Basicos</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" value="" size="50"/>
+                <br/>
+                <label for="description">Descripción</label>
+                <br/>
+               <textarea name="descripcion" id="descripcion" cols="25" rows="5"> </textarea>
+               <br/>
+               <input type="file">
+               <br/>
+               <input type="checkbox" name="checkbox" id="checkbox">
+               <label for="checkbox">Añadir Control de Vistas</label>               
+               <br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos Economicos</legend>
+                <label for="precio">Precio</label>
+                <input type="text" name"precio" id="precio" value=""/>
+                <label for="impuestos">Impuestos</label>
+                <select name="impuestos" id="impuestos">
+                    <option value="">-Selecionar Valor-</option>
+                    <option value="4%"> 4% </option>
+                    <option value="7%"> 7% </option>
+                    <option value="16%"> 16% </option>
+                    <option value="25%"> 25% </option>
+                </select>
+                <br/>
+                <br/>
+                <label for="promocion">Promocion</label>
+                <br/>
+                <input type="radio" name="promocion" value="ninguno" checked="checked" id="promocion">Ninguno
+                <br/>
+                <input type="radio" name="promocion" value="transporte-gratuito" id="promocion">Transporte gratuito
+                <br/>
+                <input type="radio" name="promocion" value="descuento" id="promocion">Descuento 5%
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Enviar" name="enviar">
+                <input type="reset" value="Borrar información" name="borrar">
+            </fieldset>
+            
+        </form>
+        <footer><p>Cristian Felipe-Practica Formulario.</p></footer>
+
+    </body>
+</html>
